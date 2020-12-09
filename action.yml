@@ -1,13 +1,19 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'feishu bot'
+description: '飞书机器人'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  version:
+    description: '版本号，1或者2'
     required: true
-    default: '1000'
-outputs:
-  time: # output will be available to future steps
-    description: 'The message to output'
+    default: '2'
+  uuid:
+    description: 'webhook中的uuid'
+    required: true
+  text:  # id of input
+    description: '选填，快速发送的文字'
+    required: true
+  data:  # id of input
+    description: '选填，发送的json'
+    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'

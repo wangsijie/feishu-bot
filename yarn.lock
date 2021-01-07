@@ -593,9 +593,9 @@
     "@types/yargs-parser" "*"
 
 "@vercel/ncc@^0.26.0":
-  version "0.26.0"
-  resolved "https://registry.yarnpkg.com/@vercel/ncc/-/ncc-0.26.0.tgz#f144d2381147604fbec520b770f136d17a94690f"
-  integrity sha512-5XWU+Flb5wKGNjIbMWAwsDImfVtw8AVXttN5ZMmmgEC4ilKauxwV3odI2V+R6qMHOBa2kmGjUBFP9+J+w3OEaw==
+  version "0.26.2"
+  resolved "https://registry.yarnpkg.com/@vercel/ncc/-/ncc-0.26.2.tgz#d0799374eb8618e48cc0841c82793b5b670c9219"
+  integrity sha512-qdajZzkGn62Ry+v7bmTSd7Qza2BVjEBuCcGpxCV5Y+ANa6d//BzByMkODmYQAhAXOg6kiAgVpbnfsd/At3PWQA==
 
 abab@^2.0.3:
   version "2.0.5"

@@ -25,3 +25,35 @@ jobs:
         uuid: f305ea10-6bfe-4a09-a560-a263d41cde6d
         data: |
           {"msg_type":"text","content":{"text":"test data from test runs"}}
+  # test with link
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ./
+      with:
+        uuid: f305ea10-6bfe-4a09-a560-a263d41cde6d
+        data: |
+          {
+            "msg_type": "post",
+            "content": {
+                "post": {
+                    "zh_cn": {
+                        "title": "项目更新通知",
+                        "content": [
+                            [
+                                {
+                                    "tag": "text",
+                                    "text": "项目有更新: "
+                                },
+                                {
+                                    "tag": "a",
+                                    "text": "请查看",
+                                    "href": "http://www.example.com/"
+                                }
+                            ]
+                        ]
+                    }
+                }
+            }
+          }

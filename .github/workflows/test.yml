@@ -26,7 +26,7 @@ jobs:
         data: |
           {"msg_type":"text","content":{"text":"test data from test runs"}}
   # test with link
-  test:
+  test-with-link:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
